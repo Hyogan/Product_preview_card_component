@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background: hsla(0, 1%, 48%, 0.787);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.product-card {
+    display: flex;
+    background:hsl(0, 0%, 100%);
+    width: 475px;
+    height: 400px;
+    margin: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.product-image {
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+    max-width: 50%;   
+}
+
+.description .product-type {
+    font-family: 'https://fonts.google.com/specimen/Montserrat)';
+    padding: 10% 0% 4%;
+    color: hsl(240, 1%, 51%);
+    font-weight: 100;
+}
+.product-name {
+   padding: 1% 0% 4%;
+   max-width: 80%;
+   color:hsl(212, 21%, 14%);
+   font-family: 'Fraunces', serif;
+}
+.description p {
+    max-width: 85%;
+    padding: 1% 1% 4%;
+    font-size: 15px;
+    color: hsl(229, 12%, 43%);
+}
+.pricing {
+    display: flex;
+    align-items: center;
+    padding: 2% 1% 4%;
+}
+
+.new-price {
+    color:   hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding-right: 10%;
+    font-family: 'Fraunces', serif;
+}
+
+.ancien-price {
+    color: hsl(34, 8%, 40%);
+    font-weight: bolder;
+    text-decoration: line-through;
+}
+.buying {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 37px;
+    margin: 2% 1% 4%;
+    background: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+}
+.buying img {
+    width: 16px;
+    height: 16px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:617px) {
+    .product-card {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 300px;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .product-image {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 42%;
+        width: 100%;
+    }
+    .description {
+        max-width: 100%;
+        padding-left: 1%;
+    }
+    .product-name {
+        max-width: 90%;
+    }
+    .description p {
+        max-width: 88.3%;
+    }
+    .buying {
+        width: 85%;
+        padding-bottom: 0;
+    }
+}
