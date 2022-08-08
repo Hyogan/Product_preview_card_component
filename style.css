@@ -83,6 +83,10 @@ body {
     border-radius: 10px;
     color: white;
     font-weight: bolder;
+    cursor: pointer;
+}
+.buying:active {
+    background: hsl(139, 60%, 18%);
 }
 .buying img {
     width: 16px;
